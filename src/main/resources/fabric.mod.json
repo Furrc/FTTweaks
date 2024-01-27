@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "fttweaks",
+  "version": "${version}",
+  "name": "FTTweaks",
+  "description": "This mod is a set of tweeks from FyrTown.",
+  "authors": [
+    "furrc"
+  ],
+  "contact": {
+    "repo": "https://github.com/Furrc/FTTweaks"
+  },
+  "license": "MIT",
+  "icon": "assets/fttweaks/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "ru.furrc.fttweaks.FTTweaksClient"
+    ],
+    "modmenu": [
+      "ru.furrc.fttweaks.config.ModMenuIntegration"
+    ]
+  },
+  "mixins": [
+    "fttweaks.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
