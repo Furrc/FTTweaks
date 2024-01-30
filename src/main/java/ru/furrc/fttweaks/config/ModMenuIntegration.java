@@ -15,7 +15,7 @@ public class ModMenuIntegration implements ModMenuApi {
         return ModMenuIntegration::createConfigScreen;
     }
 
-    private static Screen createConfigScreen(Screen parent) {
+    public static Screen createConfigScreen(Screen parent) {
         ConfigBuilder builder = ConfigBuilder.create()
                 .setParentScreen(parent)
                 .setTitle(Text.literal("FurTown Tweaks"));
@@ -32,12 +32,32 @@ public class ModMenuIntegration implements ModMenuApi {
                         .setSaveConsumer(value -> config.enableMod = value)
                         .build());
 
-        builder.getOrCreateCategory(Text.translatable("fttweaks.config.entity"))
+        builder.getOrCreateCategory(Text.translatable("fttweaks.config.frame"))
+                .addEntry(entryBuilder.startBooleanToggle(
+                                Text.translatable("fttweaks.config.showFrame"),
+                                config.showFrame)
+                        .setDefaultValue(true)
+                        .setSaveConsumer(value -> config.showFrame = value)
+                        .build())
                 .addEntry(entryBuilder.startBooleanToggle(
                                 Text.translatable("fttweaks.config.showItemFrameName"),
-                                config.showItemFrameNameTag)
-                        .setDefaultValue(false)
-                        .setSaveConsumer(value -> config.showItemFrameNameTag = value)
+                                config.showItemFrameName)
+                        .setDefaultValue(true)
+                        .setSaveConsumer(value -> config.showItemFrameName = value)
+                        .build());
+
+        builder.getOrCreateCategory(Text.translatable("fttweaks.config.sign"))
+                .addEntry(entryBuilder.startBooleanToggle(
+                                Text.translatable("fttweaks.config.showSign"),
+                                config.showSign)
+                        .setDefaultValue(true)
+                        .setSaveConsumer(value -> config.showSign = value)
+                        .build())
+                .addEntry(entryBuilder.startBooleanToggle(
+                                Text.translatable("fttweaks.config.showSignText"),
+                                config.showSignText)
+                        .setDefaultValue(true)
+                        .setSaveConsumer(value -> config.showSignText = value)
                         .build());
 
         builder.transparentBackground();

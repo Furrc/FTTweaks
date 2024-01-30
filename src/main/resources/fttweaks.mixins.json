@@ -3,10 +3,9 @@
   "minVersion": "0.8",
   "package": "ru.furrc.fttweaks.mixin",
   "compatibilityLevel": "JAVA_17",
-  "mixins": [
-  ],
   "client": [
-    "MixinRenderNameTag"
+    "MixinRenderFrame",
+    "MixinSignRender"
   ],
   "injectors": {
     "defaultRequire": 1

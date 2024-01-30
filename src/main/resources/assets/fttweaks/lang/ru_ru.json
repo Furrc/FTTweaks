@@ -2,7 +2,13 @@
   "fttweaks.config.generalCategory": "Основное",
   "fttweaks.config.enableMod": "Включить мод",
 
-  "fttweaks.config.entity": "Сущности",
-  "fttweaks.config.showItemFrameName": "Отображать имя рамки"
+  "fttweaks.config.fastSettings": "Быстрые настройки",
 
+  "fttweaks.config.frame": "Рамки",
+  "fttweaks.config.showItemFrameName": "Отображать имя рамки",
+  "fttweaks.config.showFrame": "Отображать рамку",
+
+  "fttweaks.config.sign": "Таблички",
+  "fttweaks.config.showSign": "Отображать таблички",
+  "fttweaks.config.showSignText": "Отображать текст в табличках"
 }

@@ -27,8 +27,13 @@ public class ModConfig implements ConfigData {
     // main settings
     public boolean enableMod = true;
 
-    // nametag settings
-    public boolean showItemFrameNameTag = false;
+    // frame settings
+    public boolean showItemFrameName = true;
+    public boolean showFrame = true;
+
+    // sign settings
+    public boolean showSign = true;
+    public boolean showSignText = true;
 
 
 }

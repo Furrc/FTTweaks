@@ -2,7 +2,13 @@
   "fttweaks.config.generalCategory": "General",
   "fttweaks.config.enableMod": "Enable mod",
 
-  "fttweaks.config.entity": "Entity",
-  "fttweaks.config.showItemFrameName": "Display frame name"
+  "fttweaks.config.fastSettings": "Fast settings",
 
+  "fttweaks.config.frame": "Frame",
+  "fttweaks.config.showItemFrameName": "Display frame name",
+  "fttweaks.config.showFrame": "Display frame",
+
+  "fttweaks.config.sign": "Sign",
+  "fttweaks.config.showSign": "Display sign",
+  "fttweaks.config.showSignText": "Display sign text"
 }

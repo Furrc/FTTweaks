@@ -8,6 +8,7 @@ import net.fabricmc.api.Environment;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import ru.furrc.fttweaks.config.ModConfig;
+import ru.furrc.fttweaks.keybind.KeyBindClient;
 
 @Environment(EnvType.CLIENT)
 public class FTTweaksClient implements ClientModInitializer {
@@ -18,5 +19,6 @@ public class FTTweaksClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
         AutoConfig.register(ModConfig.class, JanksonConfigSerializer::new);
+        KeyBindClient.Init();
     }
 }
